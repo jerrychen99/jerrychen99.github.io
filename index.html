@@ -1,24 +1,96 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home - Jerry Chen</title>
-  <link rel="stylesheet" href="style.css"/>
+  <title>I-Cheng (Jerry) Chen Resume</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@6.26.0/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-  <nav>
-    <h1>Jerry Chen</h1>
-    <a href="index.html">Home</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-  <main>
-    <div style="padding-left: 40px;">
-      <h2>Welcome</h2><p>This is the homepage of Jerry Chen’s minimalist portfolio site.</p>
-    </div>
-  </main>
+  <div id="root"></div>
+  <script type="text/babel">
+    function Header() {
+      return (
+        <header className="bg-blue-700 text-white py-10 text-center">
+          <h1 className="text-4xl font-bold">I-Cheng (Jerry) Chen</h1>
+          <p className="mt-2">Corvallis, Oregon | Tel: +1 (541) 908-5932 | jerryc880706@gmail.com</p>
+          <p className="mt-1">
+            <a href="https://linkedin.com/in/yourprofile" className="underline text-blue-200" target="_blank">
+              LinkedIn: Jerry Chen
+            </a>
+          </p>
+        </header>
+      );
+    }
+
+    function Education() {
+      return (
+        <section className="max-w-4xl mx-auto my-8 p-6 bg-white rounded shadow">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Education</h2>
+          <div className="mb-4">
+            <h3 className="text-lg font-bold">Oregon State University</h3>
+            <p>Master of Engineering in Computer Science | Sep 2024 - Jun 2026</p>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>GPA: 3.92/4.0</li>
+              <li>Coursework: Data Structures, Computer Architecture & Assembly Language, Algorithm Analysis, DBMS, Parallel Programming</li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-lg font-bold">Fu Jen Catholic University</h3>
+            <p>Bachelor of Science in Electrical Engineering | Sep 2017 - Jun 2021</p>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Coursework: Operating Systems, Linear Algebra, Differential Equations, Probability Theory</li>
+            </ul>
+          </div>
+        </section>
+      );
+    }
+
+    function Experience() {
+      return (
+        <section className="max-w-4xl mx-auto my-8 p-6 bg-white rounded shadow">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Experience</h2>
+          <div>
+            <h3 className="text-lg font-bold">Insyde Software Corp., Taipei, Taiwan</h3>
+            <p>Assistant Engineer, Project Team | Sep 2021 - Jul 2023</p>
+            <ul className="list-disc list-inside text-gray-700">
+              <li>Developed customized firmware functions for BIOS tasks enabling mass production of HP notebooks (OMEN, Pavilion, Victus) with Intel CPUs from AlderLake to RaptorLake.</li>
+              <li>Resolved ~100 bugs by adding custom features, identifying root causes, reinforcing code, creating CMOS control tools, and debugging system hangs.</li>
+              <li>Accelerated debugging using internal tools (H2ORTE, DDT, ITS) and external tools (Git, SVN, Source Insight, Beyond Compare).</li>
+            </ul>
+          </div>
+        </section>
+      );
+    }
+
+    function Skills() {
+      return (
+        <section className="max-w-4xl mx-auto my-8 p-6 bg-white rounded shadow">
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Skills</h2>
+          <ul className="list-disc list-inside text-gray-700">
+            <li><strong>Programming:</strong> C, C++, MASM, Python, OpenMP, SIMD, CUDA, OpenCL, MPI</li>
+            <li><strong>Tools:</strong> Git, SVN, Source Insight, Beyond Compare, Android Studio, Firebase, H2ORTE, DDT, ITS</li>
+          </ul>
+        </section>
+      );
+    }
+
+    function App() {
+      return (
+        <div className="bg-gray-100 min-h-screen">
+          <Header />
+          <Education />
+          <Experience />
+          <Skills />
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
 </body>
 </html>
