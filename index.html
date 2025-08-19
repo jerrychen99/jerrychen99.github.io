@@ -112,8 +112,32 @@
     }
 
     function Projects() {
-      return null; // You said no ESL project, so we remove this section
+      const projects = [
+        { name: "Calorie Calculator", url: "https://example.com/calorie-calculator" },
+        { name: "Robotic", url: "https://example.com/robotic" },
+        { name: "Tool", url: "https://example.com/tool" }
+      ];
+    
+      return (
+        <section className="max-w-5xl mx-auto my-12 p-8 bg-white rounded-2xl shadow-lg animate-fadeIn">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Projects</h2>
+          <div className="flex flex-wrap gap-4">
+            {projects.map((project, index) => (
+              <a
+                key={index}
+                href={project.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 transition duration-300"
+              >
+                {project.name}
+              </a>
+            ))}
+          </div>
+        </section>
+      );
     }
+
 
     function Contact() {
       return (
@@ -129,7 +153,7 @@
             <div className="text-gray-600">
               <span className="font-medium">LinkedIn:</span>{' '}
               <a href="https://linkedin.com/in/yourprofile" className="text-blue-600 hover:underline">
-                linkedin.com/in/yourprofile
+                https://www.linkedin.com/in/jerry-chen-499022254/
               </a>
             </div>
           </div>
