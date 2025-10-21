@@ -87,7 +87,7 @@
                 <h1 className="text-4xl md:text-6xl font-extrabold leading-tight">
                   <span className="bg-gradient-to-r from-brand-300 via-white to-emerald-300 bg-clip-text text-transparent bg-[length:200%_100%] animate-shine">I‑Cheng (Jerry) Chen</span>
                 </h1>
-                <p className="mt-4 text-lg md:text-xl text-white/80">Software Engineer · M.Eng in Computer Science @ OSU</p>
+                <p className="mt-4 text-lg md:text-xl text-white/80">M.Eng in Computer Science @ OSU</p>
                 <div className="mt-8 flex flex-wrap gap-3">
                   <a href="#contact" className="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-brand-500 to-emerald-500 hover:from-brand-400 hover:to-emerald-400 transition shadow-glow">
                     <span>Contact Me</span>
@@ -119,13 +119,13 @@
     const About = () => (
       <Section title="About Me" delay={.05}>
         <p className="text-white/80 leading-relaxed">
-          I am a software engineer currently pursuing a Master's in Computer Science at Oregon State University. I previously worked at Insyde Software Corp. developing BIOS firmware for HP notebooks. I enjoy solving problems using clean and efficient code, and have hands-on experience in system programming, debugging, and full‑stack development tools.
+          I’m I-Cheng (Jerry) Chen, an M.Eng. CS candidate at Oregon State University with a B.S. in Electrical Engineering from Fu Jen University. I work at the hardware–software boundary: ~2 years as a BIOS FAE at Insyde on HP notebooks, resolving ~100 firmware issues. Strong in C/C++, UEFI/BIOS, low-level debugging, and cross-team/customer communication. I’m also passionate about fitness tech—I've prototyped a calorie-estimation app and am eager to contribute to software that supports healthier habits.
         </p>
       </Section>
     );
 
     const Skills = () => {
-      const skills = ['C', 'C++', 'MASM', 'Python', 'OpenMP', 'CUDA', 'OpenCL', 'MPI', 'Git', 'SVN', 'Firebase', 'Android Studio'];
+      const skills = ['C', 'C++', 'MASM', 'Python', 'OpenMP', 'CUDA', 'OpenCL', 'OpenGL', 'GLSL', 'MPI', 'Git', 'SVN', 'Firebase', 'Android Studio'];
       return (
         <Section title="Skills" delay={.1}>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -145,7 +145,7 @@
           <div className="pl-5 border-l-2 border-brand-400">
             <h3 className="text-lg font-semibold">Oregon State University</h3>
             <p className="text-white/70">M.Eng in Computer Science &middot; Sep 2024 – Jun 2026</p>
-            <p className="text-white/60 mt-1">GPA: 3.92/4.0 &middot; Courses: Algorithms, Data Structures, Assembly, Parallel Programming</p>
+            <p className="text-white/60 mt-1">GPA: 4.0/4.0 &middot; Courses: Algorithms, Data Structures, Assembly, Parallel Programming</p>
           </div>
           <div className="pl-5 border-l-2 border-emerald-400">
             <h3 className="text-lg font-semibold">Fu Jen Catholic University</h3>
@@ -170,9 +170,8 @@
 
     const Projects = () => {
       const projects = [
-        { name: 'Calorie Calculator', url: 'https://example.com/calorie-calculator' },
+        { name: 'Calorie Calculator', url: 'https://github.com/jerrychen99/Cal_Calculator' },
         { name: 'PLC + HMI + Robot', url: 'https://github.com/jerrychen99/mitsubishi-plc-hmi-robot-lan-guide' },
-        { name: 'Tool', url: 'https://example.com/tool' }
       ];
       return (
         <Section title="Projects" delay={.25}>
