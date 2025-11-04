@@ -160,6 +160,24 @@
       <Section title="Experience" delay={.2}>
         <div className="space-y-6">
           <div className="pl-5 border-l-2 border-brand-400">
+            <h3 className="text-lg font-semibold">Engineer Intern — Robkoo Information & Technologies Co., Ltd.</h3>
+            <p className="text-white/70">Aug 2025 – Sep 2025 · Shanghai, China</p>
+            <ul className="mt-2 list-disc pl-5 text-white/70 space-y-1">
+              <li>Built an interactive <span className="font-semibold">C++/ImGui</span> virtual piano with real-time <span className="font-semibold">MIDI I/O</span> visualization to improve developer UX.</li>
+              <li>Set up cross-platform packaging using <span className="font-semibold">CMake</span> for Windows/macOS to streamline internal distribution.</li>
+            </ul>
+          </div>
+
+          <div className="pl-5 border-l-2 border-emerald-400">
+            <h3 className="text-lg font-semibold">Integration of Manufacturing Technology Intern — MSI Electronics (Kunshan) Co., Ltd.</h3>
+            <p className="text-white/70">Jul 2025 – Aug 2025 · Kunshan, China</p>
+            <ul className="mt-2 list-disc pl-5 text-white/70 space-y-1">
+              <li>Implemented a factory automation LAN connecting <span className="font-semibold">PLC-HMI-Robot</span>; configured <span className="font-semibold">Mitsubishi FX5U</span> & HMI over Ethernet.</li>
+              <li>Enabled synchronized robot–PLC operations via <span className="font-semibold">Modbus/TCP</span>; documented IP/subnet/device settings for reliable deployment.</li>
+            </ul>
+          </div>
+          
+          <div className="pl-5 border-l-2 border-brand-400">
             <h3 className="text-lg font-semibold">Assistant Engineer — Insyde Software Corp.</h3>
             <p className="text-white/70">Sep 2021 – Jul 2023</p>
             <p className="text-white/70 mt-2">Developed customized BIOS firmware features for HP notebooks (OMEN, Pavilion, Victus) with Intel CPUs from AlderLake to RaptorLake. Debugged ~100 issues including system hangs, implemented CMOS tools, and worked with internal tools like H2ORTE, DDT, ITS.</p>
@@ -172,9 +190,16 @@
       const projects = [
         { name: 'Calorie Calculator', url: 'https://github.com/jerrychen99/Cal_Calculator' },
         { name: 'PLC + HMI + Robot', url: 'https://github.com/jerrychen99/mitsubishi-plc-hmi-robot-lan-guide' },
+        { name: 'CS261_Data_Stucture', url: 'https://github.com/jerrychen99/CS261_Data_Structrue' },
+        { name: 'CS271_Assembly_Language', url: 'https://github.com/jerrychen99/CS271_Assembly_Language' },
+        { name: 'CS540_Database', url: 'https://github.com/jerrychen99/CS_540_Database' },
+        { name: 'CS575_Parallel_Programming', url: 'https://github.com/jerrychen99/CS575_Parallel_Programming' },
+        { name: 'CS375_Algorithm', url: 'https://github.com/jerrychen99/CS375_Algorithm' },
+        { name: 'AI534_ML', url: 'https://github.com/jerrychen99/AI534_ML' },
+        { name: 'AI539_AI_Accelerator_In_HLS', url: 'https://github.com/jerrychen99/AI539_AI_Accelerator_In_HLS' },
       ];
       return (
-        <Section title="Projects" delay={.25}>
+        <Section title="Projects & Course Assignments" delay={.25}>
           <div id="projects" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {projects.map((p,i) => (
               <a key={i} href={p.url} target="_blank" rel="noopener noreferrer"
